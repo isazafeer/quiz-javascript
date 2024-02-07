@@ -1,14 +1,67 @@
 body {
     background-color: #aad;
 }
+
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 10;
     padding: 0;
-}
-h1 {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: ; //may want to change later//
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: rem;
+}
+
+.flex-colunm {
+    display: flex;
+    flex-direction: colunm;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center:
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.hidden: {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem;
+    width: 30rem;
+    text-align: center;
+    margin-top: 2rem
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(90deg, rgb(1, 92, 255) 0%, rgb(0, 102, 255) 100%);
+    border-radius: 30px;
 }

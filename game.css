@@ -20,6 +20,10 @@ h2 {
     margin-bottom: 4rem;
 }
 
+h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 .text {
     text-align: center;
 }
@@ -59,13 +63,19 @@ h2 {
 }
 .hud-main-text {
     text-align: center;
+    
 }
 
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(11,223,36);
+    border: 0.2rem solid rgb(1,1,1);
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
+}
+#progressBarFull {
+    height: 3rem;
+    background: rgb(11,223,36);
+    margin: 0rem;
 }

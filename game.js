@@ -55,19 +55,19 @@ var questions =  [
     },
     {
         question: 'String values must be enclosed within ____ when being assigned to variables.',
-        choice1: 'commas',
-        choice2: 'curly brackets',
-        choice3: 'parentheses',
-        choice4: 'quotes', 
-        answer:  'quotes', 
+        choice1: 'Commas',
+        choice2: 'Curly brackets',
+        choice3: 'Parentheses',
+        choice4: 'Quotes', 
+        answer:  'Quotes', 
     },
     {
         question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
         choice1: 'JavaScript',
-        choice2: 'terminal / bash', 
-        choice3: 'for loops', 
-        choice4: 'console.log',
-        answer: 'console.log',
+        choice2: 'Terminal / bash', 
+        choice3: 'For loops', 
+        choice4: 'Console.log',
+        answer: 'Console.log',
     },
 ]
 
@@ -109,21 +109,17 @@ getNewQuestion = () => {
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return
-
         acceptingAnswers = false
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
-
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-
         if(classToApply === 'correct') {
             incremenetScore (SCORE_POINTS)
         }
-
         selectedChoice.parentElement.classList.add(classToApply)
         setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
-
         }, 1000)
     })
 })

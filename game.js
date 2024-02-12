@@ -31,43 +31,43 @@ function countdown() {
 var questions =  [
     {
         question: 'Commonly used data types DOES NOT include:',
-        choice1: 'strings',
-        choice2: 'booleans',
-        choice3: 'alerts',
-        choice4: 'numbers',
-        answer: 'alerts',
+        choice1: 'Strings',
+        choice2: 'Booleans',
+        choice3: 'Alerts',
+        choice4: 'Numbers',
+        answer: 'Alerts',
     },
     {
-        question: '2?',
-        choice1: '1',
-        choice2: '2',
-        choice3: '3',
-        choice4: '4',
-        answer: '2',
+        question: 'The condition in an if / else statement is enclosed within ____.',
+        choice1: 'Quotes',
+        choice2: 'Curly brackets',
+        choice3: 'Parentheses',
+        choice4: 'Square brackets',
+        answer: 'Parentheses',
     },
     {
-        question: '3?',
-        choice1: '1',
-        choice2: '2',
-        choice3: '3',
-        choice4: '4',
-        answer: '3',
+        question: 'Arrays in JavaScript can be used to store ____.',
+        choice1: 'Numbers and strings',
+        choice2: 'Other arrays',
+        choice3: 'Booleans',
+        choice4: 'All of the above',
+        answer: 'All of the above',
     },
     {
-        question: '4?',
-        choice1: '1',
-        choice2: '2',
-        choice3: '3',
-        choice4: '4',
-        answer: '4',
+        question: 'String values must be enclosed within ____ when being assigned to variables.',
+        choice1: 'commas',
+        choice2: 'curly brackets',
+        choice3: 'parentheses',
+        choice4: 'quotes', 
+        answer:  'quotes', 
     },
     {
-        question: '5?',
-        choice1: '1',
-        choice2: '2',
-        choice3: '3',
-        choice4: '5',
-        answer: '5',
+        question: 'A very useful tool used during development and debugging for printing content to the debugger is:',
+        choice1: 'JavaScript',
+        choice2: 'terminal / bash', 
+        choice3: 'for loops', 
+        choice4: 'console.log',
+        answer: 'console.log',
     },
 ]
 
@@ -122,7 +122,6 @@ choices.forEach(choice => {
 
         selectedChoice.parentElement.classList.add(classToApply)
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
 
         }, 1000)

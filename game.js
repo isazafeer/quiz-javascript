@@ -17,7 +17,7 @@ var availableQuestions = []
 var questions =  [
     {
         question: '1?',
-        choice1: '2',
+        choice1: '1',
         choice2: '3',
         choice3: '4',
         choice4: '5',
@@ -52,7 +52,7 @@ var questions =  [
         choice1: '1',
         choice2: '2',
         choice3: '3',
-        choice4: '4',
+        choice4: '5',
         answer: '5',
     },
 ]
@@ -114,3 +114,12 @@ choices.forEach(choice => {
         }, 1000)
     })
 })
+
+//increments//
+
+incremenetScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+
+startGame ()

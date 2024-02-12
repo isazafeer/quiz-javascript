@@ -12,16 +12,30 @@ var score = 0
 var questionCounter = 0
 var availableQuestions = []
 
+//timer//
+var timeLeft = 30;
+var timerEl = document.getElementById('timer');
+var timerId = setInterval(countdown, 800);
+function countdown() {
+    if (timeLeft === -1) {
+        clearInterval(timerId);
+        return;
+    } else {
+        timerEl.innerHTML = timeLeft;
+        timeLeft--;
+    }
+}
+
 //adding in questions//
 
 var questions =  [
     {
-        question: '1?',
-        choice1: '1',
-        choice2: '3',
-        choice3: '4',
-        choice4: '5',
-        answer: '1',
+        question: 'Commonly used data types DOES NOT include:',
+        choice1: 'strings',
+        choice2: 'booleans',
+        choice3: 'alerts',
+        choice4: 'numbers',
+        answer: 'alerts',
     },
     {
         question: '2?',

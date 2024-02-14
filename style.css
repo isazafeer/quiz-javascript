@@ -11,7 +11,6 @@ body {
 
 h1 {
     font-size: 5.4rem;
-    color: ; //may want to change later//
     margin-bottom: 2rem;
 }
 
@@ -38,7 +37,7 @@ h2 {
 
 .flex-center {
     justify-content: center;
-    align-items: center:
+    align-items: center;
 }
 
 .justify-center {
@@ -49,7 +48,7 @@ h2 {
     text-align: center;
 }
 
-.hidden: {
+.hidden {
     display: none;
 }
 

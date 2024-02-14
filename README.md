@@ -3,10 +3,10 @@
 GIVEN I am taking a code quiz
 
 WHEN I click the start button
-THEN a timer starts and I am presented with a question
+THEN a timer starts and I am presented with a question ---Done
 
 WHEN I answer a question
-THEN I am presented with another question
+THEN I am presented with another question ---Done
 
 WHEN I answer a question incorrectly
 THEN time is subtracted from the clock
@@ -16,3 +16,11 @@ THEN the game is over
 
 WHEN the game is over
 THEN I can save my initials and score
+
+
+
+What to do:
+
+-Timer subtracts
+-Only have 1 HTML file
+-Highscores page
